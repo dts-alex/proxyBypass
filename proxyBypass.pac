@@ -30,6 +30,10 @@ function FindProxyForURL(url, host) {
 	if (shExpMatch(host, 'gaaclassiccars.com') || shExpMatch(host, '*.gaaclassiccars.com'))
 		return "PROXY proxy02.datacorps.com:3128";
 
+	if (shExpMatch(host, 'thdstatic.com') || shExpMatch(host, '*.thdstatic.com'))
+		return "PROXY proxy02.datacorps.com:3128";
+
     // by default use no proxy
     return "DIRECT";
 }
+
